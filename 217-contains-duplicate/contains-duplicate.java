@@ -9,7 +9,7 @@ class Solution {
         }
         return false;
     }
-} 
+} //T.C O(nlogn) S.C O(logn)
 */
 
 class Solution {
@@ -23,4 +23,4 @@ class Solution {
         }
         return false;
     }
-}
+} //T.C O(n) S.C O(n)
