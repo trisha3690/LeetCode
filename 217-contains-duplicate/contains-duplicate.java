@@ -1,3 +1,4 @@
+/*
 class Solution {
     public boolean containsDuplicate(int[] nums) {
         Arrays.sort(nums);
@@ -5,6 +6,20 @@ class Solution {
             if(nums[i]==nums[i+1]) {
                 return true;
             }
+        }
+        return false;
+    }
+} 
+*/
+
+class Solution {
+    public boolean containsDuplicate(int[] nums) {
+        Set<Integer> set = new HashSet<>();
+        for(int num : nums) {
+           if(set.contains(num)){
+              return true;
+           }
+           set.add(num);
         }
         return false;
     }
